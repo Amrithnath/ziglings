@@ -31,6 +31,7 @@ pub fn main() void {
     var elephantC = Elephant{ .letter = 'C' };
 
     // Link the elephants so that each tail "points" to the next.
+    // Remember the elephants are not in a circle now so no changes required below
     elephantA.tail = &elephantB;
     elephantB.tail = &elephantC;
 
